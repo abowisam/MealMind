@@ -1,11 +1,11 @@
-// app/src/main/java/com/example/mealmind/ui/screens/history/HistoryScreen.kt
-package com.example.mealmind.ui.screens.history
+package com.example.mealmind
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 
+@Preview
 @Composable
 fun HistoryScreen() {
-    // Temporary implementation
     Text("History Screen")
 }

@@ -20,7 +20,6 @@ android {
 
     buildFeatures {
         compose = true
-        // Remove dataBinding if not used
     }
 
     compileOptions {
@@ -45,12 +44,13 @@ dependencies {
 
     // Compose
     implementation(platform("androidx.compose:compose-bom:2024.02.02"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation(libs.ui)
+    implementation(libs.ui.graphics)
+    implementation(libs.ui.tooling.preview)
     implementation("androidx.compose.material3:material3")
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.compose.material:material-icons-extended")
+    debugImplementation(libs.ui.tooling)
 
     // CameraX
     implementation("androidx.camera:camera-core:1.3.2")
@@ -68,6 +68,7 @@ dependencies {
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.50")
+    implementation(libs.androidx.junit.ktx)
     kapt("com.google.dagger:hilt-compiler:2.50")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 

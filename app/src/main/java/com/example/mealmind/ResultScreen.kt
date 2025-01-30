@@ -42,7 +42,6 @@ fun ResultScreen(encodedLabels: String?) {
     }
 }
 
-// Add this in a separate file or at the bottom
 data class ImageLabel(
     val text: String,
     val confidence: Float,
